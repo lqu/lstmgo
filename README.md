@@ -13,7 +13,7 @@ Here is a game in SGF format. See it in [eidogo](http://eidogo.com/#yuedAS1F).
 `(;GM[1]FF[4]CA[UTF-8]SZ[19];B[qd];W[dc];B[pq];W[oc];B[cp];W[po];B[pe];W[np])`
 
 ### GTP format
-The games in SGF format are preprocessed and translated into GTP format, which is a sequence of moves. This can be done by `sgf2gtp` from [pachi](https://github.com/openai/pachi-py/blob/master/pachi_py/pachi/tools/sgf2gtp.py). (The SGF format could be used directly, but `sgf2gtp` readily parses SGF and filters non-critical information such as play names and comments, thus reduces the size of the alphabet.)
+The games in SGF format are preprocessed and translated into GTP format, which is a sequence of moves. This can be done by `sgf2gtp` from [pachi](https://github.com/openai/pachi-py/blob/master/pachi_py/pachi/tools/sgf2gtp.py). (The SGF format could be used directly, but `sgf2gtp` readily parses SGF and filters non-critical information such as player names and comments, thus reduces the size of the alphabet.)
 
 ```
 boardsize 19
