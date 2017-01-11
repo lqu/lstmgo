@@ -33,6 +33,19 @@ The GTP format is then translated into a list of integars in range [0, 735). Thi
 
 `[0, 1, 323, 438, 309, 647, 62, 673, 303, 633]`
 
+For a quick view of the mapping, run command `nl -v0 moves.gtp`. The total 735 moves are from the following.
+
+```
+1. boardsize      1     (size = 19)
+2. clear_board    1
+3. komi           1     (different numbers treated the same)
+4. handicap       8     (from 2 to 9)
+5. black moves    361
+6. white moves    361
+7. black pass     1
+8. white pass     1
+```
+
 ### Training data
 The training data are then generated from the above list. Padding is added to make the same length. The labels will be encoded to one hot categorical form.
 
@@ -56,3 +69,5 @@ Without any tuning of parameters, the LSTM learns the following.
 3. basic pattern and openings
 
 In this [game](http://eidogo.com/#29VJNhrLX), every move is generated from the the sequence of previous moves, starting with 'play B r16'. It even plays a *large avalanche* joseki. But move 32 makes no sense, and move 38 (play W c8) is illegal.
+
+`(;GM[1]FF[4]CA[UTF-8]SZ[19];B[qd];W[dp];B[pq];W[dc];B[de];W[ce];B[dd];W[cd];B[ec];W[cf];B[df];W[dg];B[cc];W[db];B[bc];W[cb];B[cg];W[ch];B[bb];W[eb];B[bg];W[bf];B[bh];W[bd];B[fc];W[dh];B[ci];W[di];B[cj];W[dj];B[ck];W[bk];B[cl];W[bl];B[bm];W[dk];B[dl])`
