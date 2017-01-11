@@ -6,7 +6,7 @@ The goal is to learn a function that maps a sequence of moves to a next move, or
 
 Probably, this sequence perspective is not the most efficient way to capture the current state of a Go game, but it shows what the LSTM can learn without any prior domain knowledge such as the rule of the game or the 2D shape of the board.
 
-## Game representatinos
+## Game representations
 ### SGF format
 Here is a game in SGF format. See it in [eidogo](http://eidogo.com/#yuedAS1F).
 
