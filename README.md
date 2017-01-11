@@ -33,7 +33,7 @@ The GTP format is then translated into a list of integars in range [0, 735). Thi
 
 `[0, 1, 323, 438, 309, 647, 62, 673, 303, 633]`
 
-For a quick view of the mapping, run command `nl -v0 moves.gtp`. The order doesn't matter, as long as its consistent and "boardsize" is mapped to 0 for padding. The total 735 moves are from the following.
+For a quick view of the mapping, run command `nl -v0 moves.gtp`. The order doesn't matter, as long as its consistent and `"boardsize 19\n"` is mapped to `0` for padding. The total 735 moves are from the following.
 
 ```
 1. boardsize      1     (size = 19)
