@@ -1,6 +1,6 @@
 # Teaching LSTM to play Go
 
-Inspired by the [LSTM text generation](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py), I thought it would be interesting to have LSTM generate a Go game. The current state of a Go board can be viewed as a sequence of moves that leads to this state from an empty board. The sequences can be viewed as a **language**, whose alphabet consists of all the possible moves. 
+Inspired by the [LSTM text generation](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py), I thought it would be interesting to have LSTM generate a Go game. The current state of a Go board can be viewed as a sequence of moves that leads to this state from an empty board. The sequences can be viewed as a **language**, whose alphabet consists of all the possible moves and the grammar is the rules or strategies. 
 
 The goal is to learn a function that maps a sequence of moves to a next move, or to a probability distribution of the next move. This is analogous to [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)'s supervised learning (SL) policy network. It is designed to predict human expert moves, instead of winning a game. So there is no reinforcement learning or Monte-Carlo Tree Search (MCTS) included here.
 
