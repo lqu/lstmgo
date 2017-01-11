@@ -68,6 +68,6 @@ Without any tuning of parameters, the LSTM learns the following.
 2. in handicap games, place black stones before the frist white move 
 3. basic pattern and openings
 
-In this [game](http://eidogo.com/#29VJNhrLX), every move is generated from the the sequence of previous moves, starting with 'play B r16'. It even plays a *large avalanche* joseki. But move 32 makes no sense, and move 38 (play W c8) is illegal.
+In [this game](http://eidogo.com/#29VJNhrLX), every move is generated from the the sequence of previous moves, starting with 'play B r16'. It even plays a *large avalanche* joseki. But move 32 makes no sense, and move 38 (play W c8) is illegal.
 
 `(;GM[1]FF[4]CA[UTF-8]SZ[19];B[qd];W[dp];B[pq];W[dc];B[de];W[ce];B[dd];W[cd];B[ec];W[cf];B[df];W[dg];B[cc];W[db];B[bc];W[cb];B[cg];W[ch];B[bb];W[eb];B[bg];W[bf];B[bh];W[bd];B[fc];W[dh];B[ci];W[di];B[cj];W[dj];B[ck];W[bk];B[cl];W[bl];B[bm];W[dk];B[dl])`
