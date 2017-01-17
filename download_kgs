@@ -1,0 +1,18 @@
+#!/bin/bash 
+
+set -e
+
+mkdir data
+cd data
+
+for i in $(curl -s -L https://www.u-go.net/gamerecords/ | grep -o "https://.*.tar.gz")
+do
+	curl -O $i
+done
+
+for i in $(ls *.tar.gz)
+do
+	tar vxzf $i
+done
+
+
