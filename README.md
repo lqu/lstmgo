@@ -62,6 +62,9 @@ The training data are then generated from the above list. Padding is added to ma
 ```
 
 ## Initial Result
+![generated SGF](lstm.gif)
+GIF generated with https://github.com/rooklift/sgf_to_gif
+
 Without any tuning of parameters, the LSTM learns the following.
 
 1. alternate black and white stones
